@@ -1,0 +1,173 @@
+html, body, main {
+  font-family: "Times New Roman", Times, serif;
+  margin: 0px;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+/*/////////////////////HEADER TITLE/////////////*/
+div.flex_headercontainer {
+  display: flex;
+  flex-wrap: wrap;
+  /*align-content:flex-start;*/
+  /*flex-direction: row;*/
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+}
+.logo {
+   max-width: 80%;
+   height: auto;
+   float: left;
+}
+
+.header {
+  width:100%;
+}
+
+div.topbar {
+  order: 1;
+  width: 30%;
+}
+
+div.topbar2 {
+  order: 2;
+  width: 60%;
+}
+
+
+.header_title {
+  font-family: 'Amatic SC';
+  font-size: 100px;
+  margin-left: 30px;
+  width: 100%;
+}
+
+/*/////////////////////MAIN MENU BAR/////////////*/
+.sections {
+  list-style:none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+/* unvisited Main Menu link */
+.menuA {
+  width: 100%;
+  /*display: flex; /*block- change it to block if flex does not work*/
+  font-family: 'Amatic SC';
+  color: white;
+  font-size: 45px;
+  line-height: 55px;
+  margin-right: 5px;
+  text-decoration: none;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.main_nav {
+   float: left;
+}
+
+/*/////////////////////MainBody/////////////*/
+.flex_maincontainer1 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 4px;
+}
+/*/////////////////////SIDE CONTACT BAR/////////////*/
+.contactmenu {
+  list-style: none;
+}
+
+div.maincolumn1 {
+  order: 1;
+  background-color: #f9f9f9;
+  max-width: 20%;
+  margin-left: 10px;
+  margin-right: 20px;
+  /*float:left;*/
+}
+
+/* unvisited Side Bar link */
+.menuB {
+  font-family: 'Amatic SC';
+  color: black;
+  font-size: 25px;
+  line-height: 45px;
+  margin-right: 5px;
+  text-decoration: none;
+}
+
+/* visited link */
+.menuB:visited {
+    color: green;
+}
+
+/*/////////////////////Main Body / Gallery/////////////*/
+
+div.maincolumn2 {
+  flex-wrap: wrap;
+  order: 2;
+  background-color: white;
+  /*padding: 20px;
+  box-sizing: content-box;
+  max-width: 750px;
+  height: 750px;
+  border-style: inset;
+  border-color: #ededed;
+  clear: both; */
+}
+
+
+.body_title {
+  font-family: 'Amatic SC';
+  font-size: 50px;
+  margin-left: 15px;
+  max-width: 80%;
+}
+.gallery {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: row;
+  max-width:80%;
+  color: black;
+  border-color: #ededed;
+  border-width: thin;
+}
+.photocolumn {
+  max-width: 100%;
+  flex-direction: row;
+}
+.gallery1 {
+  order: 1;
+  max-width: 50%;
+  max-height: auto;
+  margin-left: 15px;
+  margin-right: 5px;
+}
+.gallery2 {
+  order: 2;
+  max-width: 50%;
+  max-height: auto;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.gallery3 {
+  order: 3;
+  max-width: 50%;
+  max-height: auto;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.gallery4 {
+  order: 4;
+  max-width: 50%;
+  max-height: auto;
+  margin-left: 5px;
+  margin-right: 5px;
+}
