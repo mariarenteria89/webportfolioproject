@@ -4,6 +4,7 @@ html, body, main {
   padding: 0;
   width: 100%;
   height: 100%;
+  box-sizing: border-box;
 }
 /*/////////////////////HEADER TITLE/////////////*/
 div.flex_headercontainer {
@@ -76,52 +77,11 @@ div.topbar2 {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-  width: 100%;
+  max-width: 100%;
   padding: 0 4px;
-}
-/*/////////////////////SIDE CONTACT BAR/////////////*/
-.contactmenu {
-  list-style: none;
-}
-
-div.maincolumn1 {
-  order: 1;
-  background-color: #f9f9f9;
-  max-width: 20%;
-  margin-left: 10px;
-  margin-right: 20px;
-  /*float:left;*/
-}
-
-/* unvisited Side Bar link */
-.menuB {
-  font-family: 'Amatic SC';
-  color: black;
-  font-size: 25px;
-  line-height: 45px;
-  margin-right: 5px;
-  text-decoration: none;
-}
-
-/* visited link */
-.menuB:visited {
-    color: green;
 }
 
 /*/////////////////////Main Body / Gallery/////////////*/
-
-div.maincolumn2 {
-  flex-wrap: wrap;
-  order: 2;
-  background-color: white;
-  /*padding: 20px;
-  box-sizing: content-box;
-  max-width: 750px;
-  height: 750px;
-  border-style: inset;
-  border-color: #ededed;
-  clear: both; */
-}
 
 
 .body_title {
@@ -129,45 +89,59 @@ div.maincolumn2 {
   font-size: 50px;
   margin-left: 15px;
   max-width: 80%;
+  display: inline-flex;
+  margin-left: 15px
+}
+.words {
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 18px;
+
 }
 .gallery {
   flex-wrap: wrap;
-  justify-content: space-around;
+  display:inline-flex;
   flex-direction: row;
-  max-width:80%;
+  max-width:100%;
   color: black;
   border-color: #ededed;
   border-width: thin;
+  display: inherit;
 }
 .photocolumn {
-  max-width: 100%;
+  max-width:100%;
+  max-height: 1000px;
   flex-direction: row;
 }
 .gallery1 {
   order: 1;
-  max-width: 50%;
-  max-height: auto;
+  max-width: 25%;
+  max-height: 339px;
   margin-left: 15px;
   margin-right: 5px;
+  display: inline-flex;
 }
 .gallery2 {
   order: 2;
-  max-width: 50%;
-  max-height: auto;
+  max-width: 40%;
+  height: 339px;
   margin-left: 5px;
   margin-right: 5px;
+  float: inline-flex;
 }
 .gallery3 {
   order: 3;
-  max-width: 50%;
-  max-height: auto;
-  margin-left: 5px;
+  max-width: 25%;
+  max-height: 428px;
+  margin-left: 15px;
   margin-right: 5px;
+  margin-top: 15px;
 }
 .gallery4 {
   order: 4;
-  max-width: 50%;
-  max-height: auto;
+  max-width: 49%;
+  height: 428px;
   margin-left: 5px;
   margin-right: 5px;
+  margin-top: 15px;
 }
