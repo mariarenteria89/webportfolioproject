@@ -1,4 +1,6 @@
-html, body, main {
+html
+body
+main {
   font-family: "Times New Roman", Times, serif;
   margin: 0px;
   padding: 0;
@@ -9,38 +11,44 @@ html, body, main {
 /*/////////////////////HEADER TITLE/////////////*/
 div.flex_headercontainer {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: no-wrap;
   /*align-content:flex-start;*/
   /*flex-direction: row;*/
-  width: 100%;
+  max-width: 100%;
   margin: 10px;
   padding: 10px;
+  max-height: 240px;
 }
 .logo {
+   display: inline-flex;
+   flex-wrap: wrap;
+   flex-direction: row;
    max-width: 80%;
    height: auto;
-   float: left;
 }
 
 .header {
+  display: inline-flex;
   width:100%;
 }
 
 div.topbar {
   order: 1;
-  width: 30%;
+  display: inline-flex;
 }
 
 div.topbar2 {
   order: 2;
-  width: 60%;
+  display:inline-flex;
+  width: 50%;
+
 }
 
 
 .header_title {
+  display: inline-flex;
   font-family: 'Amatic SC';
   font-size: 100px;
-  margin-left: 30px;
   width: 100%;
 }
 
@@ -68,7 +76,10 @@ div.topbar2 {
 }
 
 .main_nav {
-   float: left;
+  display: inline-flex;
+  flex-direction: row;
+  width: 15%;
+
 }
 
 /*/////////////////////MainBody/////////////*/
@@ -126,7 +137,6 @@ div.topbar2 {
   height: 339px;
   margin-left: 5px;
   margin-right: 5px;
-  float: inline-flex;
 }
 .gallery3 {
   order: 3;
